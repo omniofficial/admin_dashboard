@@ -23,12 +23,22 @@ body {
 .header {
     display: grid;
     grid-area: header;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "searchbar"
+        "userinfo";
     background: chartreuse;
 }
 
 .searchbar {
     grid-area: searchbar;
     background: red;
+}
+
+.userinfo {
+    grid-area: userinfo;
+    background: magenta;
 }
 
 .sidebar {
