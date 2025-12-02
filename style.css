@@ -8,6 +8,10 @@ body {
     background: lightgray;
 }
 
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -43,6 +47,7 @@ body {
 
 .userinfo {
     display: flex;
+    justify-content: space-between;
     gap: 10px;
     grid-area: userinfo;
     background: magenta;
@@ -50,7 +55,14 @@ body {
 
 .usergreeting {
     display: flex;
+    align-items: center;
     gap: 30px;
+}
+
+.userbuttons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .avatar {
