@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightgray;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+
+    grid-template-areas:
+        "sidebar header header"
+        "sidebar projects announcements"
+        "sidebar projects trending";
+
+    height: 100vh;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    background: chartreuse;
+}
+
+.searchbar {
+    grid-area: searchbar;
+    background: red;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: lightblue;
+}
+
+.projects {
+    grid-area: projects;
+    background: brown;
+}
+
+.announcements {
+    grid-area: announcements;
+    background: lightseagreen;
+}
+
+.trending {
+    grid-area: trending;
+    background: lightpink;
+}
