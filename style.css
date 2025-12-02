@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,23 +23,41 @@ body {
 
 .header {
     display: grid;
+    padding: 25px;
     grid-area: header;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "searchbar"
+        "topsection"
         "userinfo";
     background: chartreuse;
 }
 
-.searchbar {
-    grid-area: searchbar;
+.topsection {
+    grid-area: topsection;
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
     background: red;
 }
 
 .userinfo {
+    display: flex;
+    gap: 10px;
     grid-area: userinfo;
     background: magenta;
+}
+
+.usergreeting {
+    display: flex;
+    gap: 30px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover; /* important: keeps image from stretching */
 }
 
 .sidebar {
