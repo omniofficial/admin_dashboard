@@ -92,6 +92,21 @@ p {
     gap: 30px;
 }
 
+.usertext {
+    display: flex;
+    flex-direction: column; /* stack greeting and username vertically */
+    gap: 5px;
+}
+
+.greeting {
+    font-size: 18px;
+    margin: 0;
+}
+
+.username {
+    font-size: 30px;
+}
+
 .userbuttons {
     display: flex;
     align-items: center;
