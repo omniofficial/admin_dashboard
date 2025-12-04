@@ -41,14 +41,14 @@ p {
 .topsection {
     grid-area: topsection;
     display: flex;
-    justify-content: space-between;
-    gap: 150px;
+    align-items: center;
     background: red;
 }
 
 .searchsection {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    width: 1050px;
 }
 
 .searchicon {
@@ -57,7 +57,7 @@ p {
 }
 
 .searchbar {
-    width: 900px;
+    width: 700px;
     padding: 8px 10px;
     border: none;
     border-radius: 15px;
@@ -65,6 +65,17 @@ p {
     background: darkgrey;
     color: black;
     outline: none;
+}
+
+.iconssection {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.bellicon {
+    max-height: 35px;
+    max-width: auto;
 }
 
 .userinfo {
