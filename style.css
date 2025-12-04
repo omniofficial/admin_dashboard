@@ -40,6 +40,7 @@ p {
 
 .topsection {
     grid-area: topsection;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     background: red;
@@ -48,7 +49,6 @@ p {
 .searchsection {
     display: flex;
     gap: 10px;
-    width: 1050px;
 }
 
 .searchicon {
