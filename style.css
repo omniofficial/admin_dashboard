@@ -27,6 +27,7 @@ p {
 
 .header {
     display: grid;
+    align-items: center;
     padding: 25px;
     grid-area: header;
     grid-template-columns: 1fr;
@@ -43,6 +44,27 @@ p {
     justify-content: space-between;
     gap: 150px;
     background: red;
+}
+
+.searchsection {
+    display: flex;
+    gap: 20px;
+}
+
+.searchicon {
+    height: 35px;
+    width: 40px;
+}
+
+.searchbar {
+    width: 900px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    background: darkgrey;
+    color: black;
+    outline: none;
 }
 
 .userinfo {
@@ -66,13 +88,13 @@ p {
 }
 
 .btn {
-    padding: 10px 40px;
+    padding: 8px 30px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 20px;
     transition: background-color 0.2s, transform 0.1s;
 }
 
