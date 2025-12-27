@@ -136,6 +136,42 @@ p {
     grid-area: sidebar;
     background: lightblue;
 }
+.dashboard {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.dashboard h1 {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.dashboard-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* space between dashboard items */
+    margin-bottom: 50px; /* space between sections */
+}
+
+.dashboard-item {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.dashboard-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-icon {
+    width: 30px;
+    height: 30px;
+}
 
 .projects {
     grid-area: projects;
@@ -179,6 +215,11 @@ p {
     grid-auto-rows: min-content;
     gap: 15px;
     overflow-y: auto; /* critical */
+}
+
+.trending .avatar {
+    width: 60px;
+    height: 60px;
 }
 
 .trending-item {
