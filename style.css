@@ -71,6 +71,7 @@ p {
     display: flex;
     gap: 20px;
     align-items: center;
+    text-align: center;
 }
 
 .bellicon {
@@ -95,7 +96,7 @@ p {
 .usertext {
     display: flex;
     flex-direction: column; /* stack greeting and username vertically */
-    gap: 5px;
+    gap: 1px;
 }
 
 .greeting {
@@ -139,14 +140,54 @@ p {
 .projects {
     grid-area: projects;
     background: brown;
+    padding: 20px;
 }
 
 .announcements {
     grid-area: announcements;
     background: lightseagreen;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+.announcements-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 20px;
+    overflow-y: auto; /* critical */
 }
 
 .trending {
     grid-area: trending;
     background: lightpink;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+.trending-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 20px;
+    overflow-y: auto; /* critical */
+}
+
+.trending-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.userperson {
+    display: flex;
+    flex-direction: column;
 }
